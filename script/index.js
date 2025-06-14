@@ -5,7 +5,7 @@ function main() {
     const characterHeight = document.querySelector("#character-height");
     const characterImage = document.querySelector("#character-image");
   
-    const url = "https://swapi.dev/api/people";
+    const url = "https://swapi.info/api/people";
     const images = [
       "Beru Whitesun lars.jpeg",
       "Biggs Darklighter.jpeg",
