@@ -30,7 +30,8 @@ function main() {
         request = new Request(res);
         response = await fetch(request);
         data = await response.json();
-        data.results.forEach((character, index) => {
+          
+        data.forEach((character, index) => {
           const li = document.createElement("li");
           li.textContent = character.name;
   
