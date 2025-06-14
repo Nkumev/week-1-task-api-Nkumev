@@ -23,13 +23,6 @@ function main() {
       let request = new Request(url);
       let response = await fetch(request);
       let data = await response.json();
-  
-      let res = data.next;
-      while (res) {
-        console.log(res);
-        request = new Request(res);
-        response = await fetch(request);
-        data = await response.json();
           
         data.forEach((character, index) => {
           const li = document.createElement("li");
@@ -43,10 +36,8 @@ function main() {
           });
           charactersList.appendChild(li);
         });
-        res = data.next;
       }
 
-    }
     
     generate();
   }
